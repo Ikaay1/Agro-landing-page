@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 1.5rem;
+  padding: 0;
   margin: 0;
   background-color: #e5e5e5;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -621,8 +621,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 500vh;
   background-color: #064420;
   transition: .5s ease;
   padding-top: 9rem;
@@ -634,10 +634,9 @@ a {
   font-size: 27px;
   color: var(--color-golden);
   cursor: pointer;
-
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1%;
+  right: 15%;
 }
 
 .app__navbar-smallscreen_links {
@@ -778,23 +777,14 @@ a {
 }
 
 
-@media screen and (max-width: 370px) {
-  
-  .phone {
-    width: 300px;
-    position: absolute;
-    bottom: -67%;
-    left: -1%;
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 1.5rem;
   }
 
-  .round {
-    width: 200px;
-    height: 200px;
-    bottom: -15%;
-    left: -5%;
-  }
 }
-
 @media screen and (max-width: 1200px) {
   body {
     padding: 1rem;
@@ -810,16 +800,13 @@ a {
 }
 .advertflex {
   display: block;
+  padding-top: 1.5rem;
 }
 .advertinfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.advertflex {
-  padding-top: 1.5rem;
 }
 
 .photos {
@@ -1008,11 +995,9 @@ a {
     position: relative;
     border-radius: 120px;
     overflow: hidden;
-    border: 1px solid;
     margin-right: 0rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    border: 2px solid #064420;
   }
 
   .aboutimg.lastimg {
@@ -1022,7 +1007,6 @@ a {
     position: relative;
     border-radius: 120px;
     overflow: hidden;
-    border: 1px solid;
     margin-right: 0rem;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -1035,7 +1019,6 @@ a {
     position: relative;
     border-radius: 120px;
     overflow: hidden;
-    border: 1px solid;
     margin-right: 0rem;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -1069,9 +1052,11 @@ a {
 
 }
 @media screen and (max-width: 700px) {
+
   body {
-    padding: 0;
+    padding: 0.7rem;
   }
+
   .register {
     display: none;
 }
@@ -1113,11 +1098,9 @@ a {
   position: relative;
   border-radius: 120px;
   overflow: hidden;
-  border: 1px solid;
   margin-right: 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
-  border: 2px solid #064420;
 }
 
 .aboutimg.lastimg {
@@ -1127,7 +1110,6 @@ a {
   position: relative;
   border-radius: 120px;
   overflow: hidden;
-  border: 1px solid;
   margin-right: 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -1140,7 +1122,6 @@ a {
   position: relative;
   border-radius: 120px;
   overflow: hidden;
-  border: 1px solid;
   margin-right: 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -1266,7 +1247,6 @@ a {
   position: relative;
   border-radius: 120px;
   overflow: hidden;
-  border: 1px solid;
   margin-right: 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -1279,7 +1259,6 @@ a {
   position: relative;
   border-radius: 120px;
   overflow: hidden;
-  border: 1px solid;
   margin-right: 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -1301,7 +1280,6 @@ a {
 }
 
 .footer {
-  background-color: #064420;
   padding: 2rem;
   padding-bottom: 4rem;
   position: relative;
@@ -1326,7 +1304,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: .4rem;
+  margin-bottom: .6rem;
 }
 
 .social img {
@@ -1351,8 +1329,118 @@ a {
   border-radius: 6px;
 }
 
-.newsletter.form {
+.newsletter .form {
     padding-left: .9rem;
 }
+
+.contact.company {
+  margin-top: 6rem;
+}
+
+.appstore.relate {
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
+}
+
+}
+
+@media screen and (max-width: 370px) {
+  
+  .phone {
+    width: 300px;
+    position: absolute;
+    bottom: -67%;
+    left: -15%;
+  }
+
+  .round {
+    width: 200px;
+    height: 200px;
+    bottom: -15%;
+    left: 1%;
+  }
+
+  .advertflex {
+    padding: 0;
+    padding: 1.5rem;
+  }
+
+  .advertinfo > p {
+    width: 85%;
+  }
+
+  .circle1 {
+    top: 27%;
+    left: -10%;
+  }
+  
+  .circle2 {
+    top: 34%;
+    left: -10%;
+  }
+    
+  .aboutimg, .aboutimg.lastimg, .aboutimg.featureimg {
+    border-radius: 27px;
+  }
+
+  
+  .aboutimg > img {
+    width: 80rem;
+    height: 45rem;
+    transform: translate(-10%, -18%);
+    border-radius: 0;
+  }
+
+  .aboutimg.lastimg > img {
+    position: static;
+    width: 50rem;
+    height: 46rem;
+    transform: translate(-18%, -18%);
+    border-radius: 0;
+  }
+  
+  .aboutimg.featureimg > img {
+    width: 80rem;
+    height: 45rem;
+    transform: translate(-10%, -18%);
+    border-radius: 0;
+  }
+
+  .newsletter .form {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding-left: .9rem;
+  }
+
+  .form input {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+  }
+  
+  .subscribe {
+    width: 80%;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #064420;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+
+  
+
+
 
 }
