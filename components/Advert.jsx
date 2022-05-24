@@ -10,7 +10,7 @@ const Advert = () => {
           <p>Get access to farm produce right from the from</p>
           <p>and also sell before getting to the market with an easy</p>
           <p>to use app right from the comfort of your home</p>
-          <div className="appstore">
+          <div className="appstore advertstore">
             <img
               src="https://manners4minors.com/wp-content/uploads/2016/06/app-store-badge.png"
               alt="apple logo"
